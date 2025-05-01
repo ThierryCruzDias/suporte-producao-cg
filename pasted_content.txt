@@ -1,0 +1,33 @@
+Crie um programa simples que funcione como uma inteligência artificial de suporte técnico para um estúdio de animação 3D. Esse programa deve ser fácil de executar, preferencialmente em formato de página web (HTML com JavaScript), que abra direto no navegador com um clique, sem necessidade de instalação.
+
+Funções que o programa deve ter:
+
+    Campo de entrada de texto, onde o usuário digita dúvidas ou problemas técnicos relacionados à pipeline do estúdio (que utiliza Maya 2023, Arnold Renderer e Yeti).
+
+    O programa deve analisar a pergunta, identificar palavras-chave técnicas, e então:
+
+        Apontar o setor responsável pelo problema (ex: rigging, grooming, lighting, comp, pipeline).
+
+        Sugerir uma ou mais causas prováveis.
+
+        Oferecer uma solução prática ou um passo a passo de troubleshooting.
+
+    Caso o problema seja grave ou desconhecido, o programa deve indicar uma pessoa de contato da equipe, com nome e função, para que a coordenação saiba com quem falar.
+
+    Deve haver um botão ou menu chamado “Dúvidas Frequentes”, onde estarão listadas perguntas e respostas comuns, separadas por setor (ex: animação, lighting, render, grooming etc.).
+
+    Deve haver uma seção explicando os fluxos de trabalho entre setores, por exemplo:
+
+        Quando o departamento de animação entrega para lighting.
+
+        Quando o rig precisa de ajustes e volta para rigging.
+
+        Como organizar arquivos de cena e onde salvar versões finais.
+
+    Deve existir um sistema de busca por palavras-chave, onde o usuário pode digitar, por exemplo, “render preto”, “cache do Yeti”, ou “Arnold license”, e receber a resposta diretamente.
+
+    Toda a lógica deve funcionar localmente, sem depender de conexão com internet ou servidor externo, e ser escrita de forma clara para futuras atualizações.
+
+    Utilize de técnicas de UI/UX, psicologia das cores e design para criar um visual que deve ser simples e direto, com interface amigável para quem não é técnico: campos grandes, botões claros e informações organizadas por setor.
+
+Você tem total liberdade para acrescentar qualquer coisa a mais que você acha que vai ajudar o funcionamento desse app. Seja linkar ele a alguma inteligência artificial gratuita ou qualquer outra coisa.

@@ -1,0 +1,142 @@
+/* Estilos Gerais */
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #3a5a78; /* Azul acinzentado - profissionalismo, confiança */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+section h2 {
+    margin-top: 0;
+    color: #3a5a78;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Campos de Entrada e Botões */
+input[type="text"] {
+    width: calc(100% - 22px); /* Ajuste para padding e borda */
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    display: inline-block;
+    background-color: #5c85ad; /* Azul mais claro - ação, clareza */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4a6a8a; /* Tom mais escuro no hover */
+}
+
+#busca-principal button,
+#busca-geral button {
+    margin-left: 5px;
+}
+
+/* Navegação Auxiliar */
+#navegacao-auxiliar {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#navegacao-auxiliar button {
+    margin: 0 10px;
+    background-color: #6c757d; /* Cinza - neutro */
+}
+
+#navegacao-auxiliar button:hover {
+    background-color: #5a6268;
+}
+
+/* Resultados */
+#resultado-analise,
+#resultado-busca {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #e9ecef; /* Fundo levemente destacado para resultados */
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    min-height: 50px; /* Para visualização mesmo vazio */
+}
+
+/* Conteúdo Oculto */
+.conteudo-oculto {
+    display: none; /* Esconde as seções por padrão */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    background-color: #e0e0e0;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+/* Responsividade básica */
+@media (max-width: 600px) {
+    main {
+        margin: 1rem;
+        padding: 0.5rem;
+    }
+
+    input[type="text"] {
+        width: calc(100% - 20px);
+    }
+
+    #busca-principal button,
+    #busca-geral button {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+
+    #navegacao-auxiliar button {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+}
