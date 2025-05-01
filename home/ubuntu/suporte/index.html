@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte Técnico - Estúdio de Animação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Suporte Técnico - Estúdio de Animação</h1>
+    </header>
+
+    <main>
+        <section id="busca-principal">
+            <h2>Como posso ajudar?</h2>
+            <input type="text" id="input-problema" placeholder="Descreva seu problema ou dúvida técnica aqui...">
+            <button id="btn-analisar">Analisar Problema</button>
+            <div id="resultado-analise">
+                <!-- Resultados da análise serão exibidos aqui -->
+            </div>
+        </section>
+
+        <section id="busca-geral">
+            <h2>Busca Rápida</h2>
+            <input type="text" id="input-busca" placeholder="Digite palavras-chave (ex: render preto, cache Yeti)...">
+            <button id="btn-buscar">Buscar</button>
+            <div id="resultado-busca">
+                <!-- Resultados da busca serão exibidos aqui -->
+            </div>
+        </section>
+
+        <nav id="navegacao-auxiliar">
+            <button id="btn-faq">Dúvidas Frequentes</button>
+            <button id="btn-workflows">Fluxos de Trabalho</button>
+        </nav>
+
+        <section id="conteudo-faq" class="conteudo-oculto">
+            <h2>Dúvidas Frequentes</h2>
+            <!-- Conteúdo das Dúvidas Frequentes será carregado aqui -->
+        </section>
+
+        <section id="conteudo-workflows" class="conteudo-oculto">
+            <h2>Fluxos de Trabalho</h2>
+            <!-- Conteúdo dos Fluxos de Trabalho será carregado aqui -->
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Desenvolvido para auxiliar a equipe do estúdio.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,6 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("DOM fully loaded and parsed"); // Debug: Check if DOMContentLoaded fires
-
     // Elementos da interface
     const inputProblema = document.getElementById("input-problema");
     const btnAnalisar = document.getElementById("btn-analisar");
@@ -14,12 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const btnWorkflows = document.getElementById("btn-workflows");
     const conteudoFaq = document.getElementById("conteudo-faq");
     const conteudoWorkflows = document.getElementById("conteudo-workflows");
-
-    // Debug: Check if elements are found
-    if (!btnAnalisar) console.error("Button 'btn-analisar' not found!");
-    if (!resultadoAnalise) console.error("Div 'resultado-analise' not found!");
-    if (!btnBuscar) console.error("Button 'btn-buscar' not found!");
-    if (!resultadoBusca) console.error("Div 'resultado-busca' not found!");
 
     // --- Base de Conhecimento Detalhada ---
     const baseConhecimento = {
@@ -170,5 +162,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 { pergunta: "Onde o Yeti salva os arquivos de cache?", resposta: "Normalmente, o caminho é definido no atributo `Cache File Name` do nó do Yeti. Por padrão, ele pode salvar em uma pasta `cache/yeti` dentro do diretório do seu projeto Maya (`workspace`). Verifique o caminho completo no atributo para ter certeza. A pipeline do estúdio pode definir um local padrão diferente." }
             ],
             "Lighting/Render (Arnold)": [
-                { pergunta: "Meu render está muito granulado (noise), como corrigir?", resposta: "O ruído geralmente vem de samples insuficientes. Aumente os samples:<br>1. **Global (Camera AA):** Aumenta a qualidade geral e afeta todos os outros samples. É o principal controle.<br>2. **Específicos (Diffuse, Specular, Transmission, SSS, Volume Indirect):** Aumente apenas os samples do tipo de raio que está causando o ruído. Ex: Se o reflexo está ruidoso, aume
+                { pergunta: "Meu render está muito granulado (noise), como corrigir?", resposta: "O ruído geralmente vem de samples insuficientes. Aumente os samples:<br>1. **Global (Camera AA):** Aumenta a qualidade geral e afeta todos os outros samples. É o principal controle.<br>2. **Específicos (Diffuse, Specular, Transmission, SSS, Volume Indirect):** Aumente apenas os samples do tipo de raio que está causando o ruído. Ex: Se o reflexo está ruidoso, aumente `Specular` samples.<br>3. **Luzes:** Aumente os `Samples` nas configurações de cada luz Arnold.<br>4. **Denoiser:** Use o Arnold Denoiser (OptiX para Nvidia, OIDN para CPU/outras GPUs) como passe final (AOV `denoise_albedo`, `denoise_normal`) ou na pós-produção." },
+                { pergunta: "Como configurar AOVs (Render Passes)?", resposta: "Vá para a aba `AOVs` nas `Render Settings` do Arnold.<br>1. Selecione os AOVs des
 (Content truncated due to size limit. Use line ranges to read in chunks)
