@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Suporte Produção CG</title>
+</head>
+<body>
+  <h1>Assistente de Suporte Técnico - CG</h1>
+  <p>Digite sua dúvida no campo abaixo:</p>
+  <input type="text" id="pergunta" placeholder="Ex: Meu render está preto" size="50">
+  <button onclick="responder()">Enviar</button>
+  <div id="resposta" style="margin-top:20px;"></div>
+
+  <script>
+    function responder() {
+      const pergunta = document.getElementById('pergunta').value.toLowerCase();
+      const resposta = document.getElementById('resposta');
+
+      if (pergunta.includes('render') && pergunta.includes('preto')) {
+        resposta.innerHTML = `
+          <strong>Setor responsável:</strong> Lighting<br>
+          <strong>Possível causa:</strong> Falta de luz na cena ou câmera sem tag de render.<br>
+          <strong>Sugestão:</strong> Verifique se há luzes ativas e se a câmera está corretamente configurada.
+        `;
+      } else {
+        resposta.innerHTML = `Desculpe, não reconheço esse problema ainda. Consulte o coordenador de pipeline.`;
+      }
+    }
+  </script>
+</body>
+</html>
